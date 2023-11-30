@@ -83,12 +83,24 @@ a:hover{
   background-color: #111111;
   color: #888888;
 }
-footer{
+footer {
   color: #ffffff;
-  bottom: 1;
-  position: absolute;
-  align-items: center;
+  position: relative;
   text-align: center;
-  margin: auto;
   width: 100%;
+  padding: 50px 0; /* Modificado el valor del padding */
+  background-color: #111111; /* Cambiado el color de fondo */
 }
+
+/* Estilo para los enlaces del footer */
+footer a {
+  color: #000000;
+  text-decoration: underline;
+  margin: 0 10px; /* Añadido espacio entre los enlaces */
+}
+
+/* Estilo para los enlaces del footer al pasar el ratón */
+footer a:hover {
+  color: #575757;
+}
+
