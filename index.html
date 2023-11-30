@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +22,10 @@
 
     <title>Distord</title>
 </head>
+
 <body>
+
+    <!-- Navbar -->
     <header class="container rounded bg-info text-light p-4">
         <div class="row">
             <div class="col">
@@ -38,27 +42,63 @@
             </div>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main class="container rounded p-4">
-        <p>Bienvenidos a nuestra pagina! aquí les presentamos Distord! Distord? Distord, el nuevo y novedoso sistema de mensajería instantánea online.</p>
-        <div class="info rounded bg-light text-dark p-4">
-            <p>Básicamente y en pocas palabras, Distord es un servicio de mensajería y llamadas online en el que puedes hablar con tus amigos!</p>
-        </div>
-        <div id="hovereable" onmouseover="change();" class="row m-4">
+        <p>Bienvenidos a nuestra página. Aquí les presentamos Distord, el nuevo y novedoso sistema de mensajería instantánea online.</p>
+
+        <div class="row m-4">
             <div class="col">
-                <img src="./img/distord_1.png" alt="Una horrible imagen se hace presente." class="rounded">
+                <div id="hovereable" onmouseover="change();" class="rounded">
+                    <img src="./img/distord.png" alt="Imagen 1" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col">
+                <p>IMAGINA UN LUGAR...
+                    ... en el que puedas formar parte de un club escolar, un grupo de jugadores o una comunidad mundial de arte. En el que puedas pasar tiempo con unos cuantos amigos. Un lugar que haga que hablar a diario y divertirte más a menudo sea fácil.</p>
             </div>
         </div>
-        <script>
-            function change(){
-                document.getElementById("hovereable").innerHTML="<img src=\"./img/distord_2.png\" class=\"rounded\">";
-            }
-        </script>
+
+        <!-- Image Section with Hover Effect -->
+      <!-- Image Section with Text on Left -->
+<div class="row m-4">
+    <div class="col">
+        <p>Crea un lugar solo para miembros en el que encajes. Los servidores de Discord se organizan en canales ordenados por temas donde puedes colaborar, compartir o simplemente hablar de tu día sin monopolizar un chat de grupo.</p>
+    </div>
+    <div class="col">
+        <div id="hovereable" onmouseover="change();" class="rounded">
+            <img src="./img/distord_1.png" alt="Imagen 1" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+
+
+<div class="row m-4">
+    <div class="col">
+        <div id="hovereable" onmouseover="change();" class="rounded">
+            <img src="./img/distord2.png" alt="Imagen 1" class="img-fluid rounded">
+        </div>
+    </div>
+    <div class="col">
+        <p>De unos pocos fans a un montón
+            Establece cualquier comunidad con las herramientas de moderación y el acceso personalizado de miembros. Concédeles poderes especiales, crea canales privados y mucho más.</p>
+    </div>
+</div>
+
+        <!-- Additional Content Sections -->
+        <!-- ... (Añade más secciones según sea necesario) -->
+
     </main>
-    <footer class="container rounded bg-info text-light p-4 text-center">
-        <p>Copyright ©2023 Distord</p>
+
+    <!-- Footer -->
+    <footer class="container rounded bg-info text-light p-4 text-center mt-4">
+        <p>Copyright © 2023 Distord</p>
         <p><a href="contact.html">Comentarios</a></p>
         <p>UCT</p>
         <p>Gracias por su atención</p>
     </footer>
+
+
 </body>
+
 </html>
