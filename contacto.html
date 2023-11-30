@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png">
+    <meta name="author" content="Patricio & Sebastian">
+    <meta name="keywords" content="Almohadas, Anime, Waifu">
+    <meta name="description" content="Sitio para comprar almohadas personalizadas">
+    <meta name="robots" content="noindex" />
+
+    <!-- Bootstrap CSS y JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+   
+
+    <title>Distord</title>
+</head>
+<body>
+    <header class="container rounded">
+        <div class="row">
+            <div class="col">
+                <h1 id="title">Distord</h1>
+                <img class="logo rounded" src="./img/logo.png" alt="">
+            </div>
+            <div class="col">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="download.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="container rounded">
+        <form class="form" method="post" action="http://localhost/Distord-Entrega2/PHP/conex.inc.php">
+            <h2>CONTACTANOS</h2>
+            <h3>No dudes en dejarnos un mensaje</h3>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="contact-info mt-3">
+                <span class="fa fa-phone"></span> Teléfono: (987) 654 - 321
+                <span class="fa fa-envelope-o"></span> Email: Distord@gmail.com
+            </div>
+        </form>
+    </main>
+    <footer class="container rounded">
+        <div class="row">
+            <div class="col">
+                <p>Copyright ©2023 Distord </p>
+            </div>
+            <div class="col">
+                <p><a href="contact.html">Comentarios</a></p>
+            </div>
+            <div class="col">
+                <p>UCT</p>
+            </div>
+            <div class="col">
+                <p>Gracias por su atención</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

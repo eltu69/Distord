@@ -1,0 +1,94 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #333333;
+}
+header{
+  margin: 2rem;
+  border: solid #ffffff 2px;
+  border-radius: 1rem;
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+header *{
+  display: inline;
+}
+header h1{
+  letter-spacing: -5px;
+}
+.logo{
+  width: 6rem;
+}
+header li{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+a{
+  color: #000000;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+main{
+  margin: 0;
+  background-color: #ffffff;
+  color: #111111;
+  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+main *{
+  align-items: center;
+}
+main div{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: auto;
+  margin: 1rem;
+  float: left;
+}
+main * h1{
+  text-align: center;
+  text-decoration: underline;
+}
+main * p{
+  margin: 1rem;
+}
+.downloads{
+  padding: 2rem;
+  background-color: black;
+  border-radius: 1rem;
+  color: white;
+}
+header, footer{
+  background-color: #111111;
+  text-align: center;
+}
+a:visited{
+  color: #333333;
+}
+a:hover{
+	color: #575757;
+}
+#random{
+  width: 20%;
+}
+#title{
+  text-shadow: 0px 3px #555555;
+}
+#download{
+  background-color: #111111;
+  color: #888888;
+}
+footer{
+  color: #ffffff;
+  bottom: 1;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
