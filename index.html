@@ -44,13 +44,15 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container rounded p-4">
-        <p>Bienvenidos a nuestra página. Aquí les presentamos Distord, el nuevo y novedoso sistema de mensajería instantánea online.</p>
-
+    <main class="container rounded p-4">     
+        <div class="info rounded bg-info text-dark p-4">
+            <p>Bienvenidos a nuestra página. Aquí les presentamos Distord, el nuevo y novedoso sistema de mensajería instantánea online.</p>
+        </div>
+        <!-- Primera Imagen -->
         <div class="row m-4">
             <div class="col">
-                <div id="hovereable" onmouseover="change();" class="rounded">
-                    <img src="./img/distord.png" alt="Imagen 1" class="img-fluid rounded">
+                <div class="rounded hoverable" onmouseover="changeImage(this, 'distord');" onmouseout="resetImage(this, 'distord');">
+                    <img src="./img/distord.png" alt="Imagen 1" class="img-fluid rounded" data-original="./img/distord.png">
                 </div>
             </div>
             <div class="col">
@@ -59,35 +61,50 @@
             </div>
         </div>
 
-        <!-- Image Section with Hover Effect -->
-      <!-- Image Section with Text on Left -->
-<div class="row m-4">
-    <div class="col">
-        <p>Crea un lugar solo para miembros en el que encajes. Los servidores de Discord se organizan en canales ordenados por temas donde puedes colaborar, compartir o simplemente hablar de tu día sin monopolizar un chat de grupo.</p>
-    </div>
-    <div class="col">
-        <div id="hovereable" onmouseover="change();" class="rounded">
-            <img src="./img/distord_1.png" alt="Imagen 1" class="img-fluid rounded">
+        <!-- Segunda Imagen -->
+        <div class="row m-4">
+            <div class="col">
+                <p>Crea un lugar solo para miembros en el que encajes. Los servidores de Distord se organizan en canales ordenados por temas donde puedes colaborar, compartir o simplemente hablar de tu día sin monopolizar un chat de grupo.</p>
+            </div>
+            <div class="col">
+                <div class="rounded hoverable" onmouseover="changeImage(this, 'distord_1');" onmouseout="resetImage(this, 'distord_1');">
+                    <img src="./img/distord_1.png" alt="Imagen 2" class="img-fluid rounded" data-original="./img/distord_1.png">
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-<div class="row m-4">
-    <div class="col">
-        <div id="hovereable" onmouseover="change();" class="rounded">
-            <img src="./img/distord2.png" alt="Imagen 1" class="img-fluid rounded">
+        <!-- Tercera Imagen -->
+        <div class="row m-4">
+            <div class="col">
+                <div class="rounded hoverable" onmouseover="changeImage(this, 'distord2');" onmouseout="resetImage(this, 'distord2');">
+                    <img src="./img/distord2.png" alt="Imagen 3" class="img-fluid rounded" data-original="./img/distord2.png">
+                </div>
+            </div>
+            <div class="col">
+                <p>De unos pocos fans a un montón
+                    Establece cualquier comunidad con las herramientas de moderación y el acceso personalizado de miembros. Concédeles poderes especiales, crea canales privados y mucho más.</p>
+            </div>
         </div>
-    </div>
-    <div class="col">
-        <p>De unos pocos fans a un montón
-            Establece cualquier comunidad con las herramientas de moderación y el acceso personalizado de miembros. Concédeles poderes especiales, crea canales privados y mucho más.</p>
-    </div>
-</div>
+        <div class="info rounded bg-info text-dark p-4">
+            <p>Básicamente y en pocas palabras, Distord es un servicio de mensajería y llamadas online en el que puedes hablar con tus amigos!</p>
+        </div>
+        <!-- Contenedor para el contenido centrado -->
+        <div class="info rounded bg-light text-dark p-4 text-center">
 
-        <!-- Additional Content Sections -->
-        <!-- ... (Añade más secciones según sea necesario) -->
+            <!-- Título -->
+            <h1>UNA TECNOLOGÍA FIABLE PARA MANTENERSE EN CONTACTO</h1>
 
+            <!-- Texto -->
+            <p>Gracias a la voz y el vídeo de baja latencia, parece que estáis en la misma habitación. Saluda a la cámara, accede a las transmisiones de los juegos de tus amigos o reuníos y disfrutad de una sesión de dibujo compartiendo la pantalla.</p>
+
+            <!-- Imagen -->
+            <img src="img/sis.png" alt="Sistema" class="img-fluid mt-4 mb-4">
+
+            <h2>¿Todo listo para comenzar tu viaje?</h2>
+
+            <a href="http://">Descarga para Windows</a>
+        </div>
+        
     </main>
 
     <!-- Footer -->
@@ -98,6 +115,17 @@
         <p>Gracias por su atención</p>
     </footer>
 
+    <!-- Script para el cambio de imágenes -->
+    <script>
+        function changeImage(element, imageName) {
+            element.getElementsByTagName('img')[0].src = `./img/${imageName}_flipped.png`;
+        }
+    
+        function resetImage(element, imageName) {
+            element.getElementsByTagName('img')[0].src = `./img/${imageName}.png`;
+        }
+    </script>
+    
 
 </body>
 

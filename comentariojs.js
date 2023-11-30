@@ -31,6 +31,7 @@
              const comprador = data.results[0];
              const nombre = `${comprador.name.first} ${comprador.name.last}`;
              const imagen = comprador.picture.large;
+             
 
              // Mostramos los nombres y las imagenes de los compradores
              const nombreComprador = document.getElementById("nombre-comprador");
