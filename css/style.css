@@ -83,12 +83,10 @@ a:hover{
   background-color: #111111;
   color: #888888;
 }
-footer{
+footer {
   color: #ffffff;
-  bottom: 1;
-  position: absolute;
-  align-items: center;
+  position: relative; /* Cambiado a relative */
   text-align: center;
-  margin: auto;
   width: 100%;
+  padding: 100px; 
 }
