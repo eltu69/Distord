@@ -9,6 +9,7 @@
     <meta name="keywords" content="Almohadas, Anime, Waifu">
     <meta name="description" content="Sitio para comprar almohadas personalizadas">
     <meta name="robots" content="noindex" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
     <!-- Bootstrap CSS y JS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -38,9 +39,56 @@
             </div>
         </div>
     </header>
+<<<<<<< Updated upstream
     <main class="container rounded p-4">
         <p>Bienvenidos a nuestra pagina! aquí les presentamos Distord! Distord? Distord, el nuevo y novedoso sistema de mensajería instantánea online.</p>
         <div class="info rounded bg-light text-dark p-4">
+=======
+
+    <!-- Main Content -->
+    <main class="container rounded p-4" id="app">
+        <div class="info rounded bg-info text-dark p-4">
+            <p>Bienvenidos a nuestra página. Aquí les presentamos Distord, el nuevo y novedoso sistema de mensajería instantánea online.</p>
+        </div>
+        <!-- Primera Imagen -->
+        <div class="row m-4">
+            <div class="col">
+                <div class="rounded hoverable" onmouseover="changeImage(this, 'distord');" onmouseout="resetImage(this, 'distord');">
+                    <img src="./img/distord.png" alt="Imagen 1" class="img-fluid rounded" data-original="./img/distord.png">
+                </div>
+            </div>
+            <div class="col">
+                <p>IMAGINA UN LUGAR...
+                    ... en el que puedas formar parte de un club escolar, un grupo de jugadores o una comunidad mundial de arte. En el que puedas pasar tiempo con unos cuantos amigos. Un lugar que haga que hablar a diario y divertirte más a menudo sea fácil.</p>
+            </div>
+        </div>
+
+        <!-- Segunda Imagen -->
+        <div class="row m-4">
+            <div class="col">
+                <p>Crea un lugar solo para miembros en el que encajes. Los servidores de Distord se organizan en canales ordenados por temas donde puedes colaborar, compartir o simplemente hablar de tu día sin monopolizar un chat de grupo.</p>
+            </div>
+            <div class="col">
+                <div class="rounded hoverable" onmouseover="changeImage(this, 'distord_1');" onmouseout="resetImage(this, 'distord_1');">
+                    <img src="./img/distord_1.png" alt="Imagen 2" class="img-fluid rounded" data-original="./img/distord_1.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tercera Imagen -->
+        <div class="row m-4">
+            <div class="col">
+                <div class="rounded hoverable" onmouseover="changeImage(this, 'distord2');" onmouseout="resetImage(this, 'distord2');">
+                    <img src="./img/distord2.png" alt="Imagen 3" class="img-fluid rounded" data-original="./img/distord2.png">
+                </div>
+            </div>
+            <div class="col">
+                <p>De unos pocos fans a un montón
+                    Establece cualquier comunidad con las herramientas de moderación y el acceso personalizado de miembros. Concédeles poderes especiales, crea canales privados y mucho más.</p>
+            </div>
+        </div>
+        <div class="info rounded bg-info text-dark p-4">
+>>>>>>> Stashed changes
             <p>Básicamente y en pocas palabras, Distord es un servicio de mensajería y llamadas online en el que puedes hablar con tus amigos!</p>
         </div>
         <div id="hovereable" onmouseover="change();" class="row m-4">
@@ -70,5 +118,35 @@
             </div>
         </div>
     </footer>
+<<<<<<< Updated upstream
+=======
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                message: '¡Hola desde Vue.js!'
+            }
+        });
+    </script>
+    
+    <!-- Script para el cambio de imágenes -->
+    <script>
+        function changeImage(element, imageName) {
+            element.getElementsByTagName('img')[0].src = `./img/${imageName}_flipped.png`;
+        }
+    
+        function resetImage(element, imageName) {
+            element.getElementsByTagName('img')[0].src = `./img/${imageName}.png`;
+        }
+
+        new Vue({
+            el: '#app',
+            data: {
+                message: '¡Hola desde Vue.js!'
+            }
+        });
+    </script>
+
+>>>>>>> Stashed changes
 </body>
 </html>
