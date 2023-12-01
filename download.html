@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Metadatos del documento -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +12,7 @@
     <meta name="description" content="Sitio para comprar almohadas personalizadas">
     <meta name="robots" content="noindex" />
 
-    <!-- Bootstrap CSS y JS -->
+    <!-- Enlaces a Bootstrap CSS y JS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -21,7 +23,9 @@
 
     <title>Distord</title>
 </head>
+
 <body>
+    <!-- Encabezado de la página -->
     <header class="container rounded bg-info text-light p-4">
         <div class="row">
             <div class="col">
@@ -38,28 +42,43 @@
             </div>
         </div>
     </header>
+
+    <!-- Contenido principal -->
     <main class="container rounded p-4">
+        <!-- Sección sobre la dedicación a la producción de software -->
         <div>
             <p>Nos dedicamos full a la producción de software</p>
         </div>
+
+        <!-- Sección de descarga de Distord -->
         <div>
             <h1>Descarga Distord</h1>
+            <!-- Enlaces de descarga para Windows y Linux -->
             <h2 id="windowsDownload"><a href="#" onclick="mostrarAgradecimiento('Windows')" class="text-primary">Descarga para Windows</a></h2>
             <h2 id="linuxDownload"><a href="#" onclick="mostrarAgradecimiento('Linux')" class="text-primary">Descarga para Linux</a></h2>
         </div>
+
+        <!-- Sección de descarga del rellenador de enlaces -->
         <div>
             <p>¿Problemas con enlaces vacíos?</p>
             <h1>Descargue nuestro rellenador de enlaces</h1>
+            <!-- Enlace de descarga del rellenador de enlaces -->
             <h3 id="download"><a href="#" class="text-primary">Descargar</a></h3>
             <p>Es rápido y seguro, sin virus, ni se moleste en activar avast</p>
         </div>
     </main>
+
+    <!-- Pie de página -->
     <footer class="container rounded bg-info text-light p-4 text-center mt-4">
         <p>Copyright ©2023 Distord</p>
+        <!-- Enlace a la página de comentarios -->
         <p><a href="contact.html">Comentarios</a></p>
         <p>UCT</p>
         <p>Gracias por su atención</p>
     </footer>
+
+    <!-- Enlace al archivo JavaScript login.js -->
     <script src="login.js"></script>
 </body>
+
 </html>

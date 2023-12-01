@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Metadatos del documento -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +12,21 @@
     <meta name="description" content="Sitio para comprar almohadas personalizadas">
     <meta name="robots" content="noindex" />
 
-    <!-- Bootstrap CSS y JS -->
+    <!-- Enlaces a Bootstrap CSS y JS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <!-- Tus hojas de estilos personalizadas -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_contacto.css ">
 
     <title>Distord</title>
 </head>
+
 <body>
+    <!-- Encabezado de la página -->
     <header class="container rounded bg-info text-light p-4">
         <div class="row">
             <div class="col">
@@ -38,10 +43,14 @@
             </div>
         </div>
     </header>
+
+    <!-- Contenido principal -->
     <main class="container rounded">
+        <!-- Formulario de contacto -->
         <form class="form" method="post" action="http://localhost/Distord-Entrega2/PHP/conex.inc.php">
             <h2>CONTACTANOS</h2>
             <h3>No dudes en dejarnos un mensaje</h3>
+            <!-- Campos del formulario -->
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" class="form-control" name="nombre" required>
@@ -54,18 +63,24 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea class="form-control" name="mensaje" rows="4" required></textarea>
             </div>
+            <!-- Botón de envío -->
             <button type="submit" class="btn btn-primary">Enviar</button>
+            <!-- Información de contacto -->
             <div class="contact-info mt-3">
                 <span class="fa fa-phone"></span> Teléfono: (987) 654 - 321
                 <span class="fa fa-envelope-o"></span> Email: Distord@gmail.com
             </div>
         </form>
     </main>
+
+    <!-- Pie de página -->
     <footer class="container rounded bg-info text-light p-4 text-center mt-4">
         <p>Copyright ©2023 Distord</p>
+        <!-- Enlace a la página de comentarios -->
         <p><a href="contact.html">Comentarios</a></p>
         <p>UCT</p>
         <p>Gracias por su atención</p>
     </footer>
 </body>
+
 </html>
